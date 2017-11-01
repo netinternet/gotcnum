@@ -4,7 +4,7 @@ Turkish Identification Number Validation
 ## Usage
 
 ```
-go get github.com/netinternet/go-tcnum
+go get github.com/netinternet/gotcnum
 ```
 
 ## Exemple
@@ -13,16 +13,17 @@ go get github.com/netinternet/go-tcnum
 package main
 
 import (
-    "fmt"
-    "github.com/netinternet/go-tcnum"
+  "fmt"
+  "github.com/netinternet/gotcnum"
 )
 
 func main() {
-    if valid := VerifyTcnum("10148343778"); valid {
-      fmt.Println("TC Number Is Valid")
-    } else {
-      fmt.Println("TC Number Is Not Valid")
-    }
+  if valid := gotcnum.tcnum("10148343778"); valid {
+    fmt.Println("TC Number Is Valid")
+  } else {
+    fmt.Println("TC Number Is Not Valid")
+  }
 }
+
 
 ```

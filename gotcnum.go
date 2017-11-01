@@ -2,7 +2,7 @@ package gotcnum
 
 import "strconv"
 
-func gotcnum(n string) bool {
+func tcnum(n string) bool {
 	var even, odd, total, digits, digit10, digit11 int
 	if len(n) != 11 {
 		return false
