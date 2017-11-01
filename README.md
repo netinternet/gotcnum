@@ -1,4 +1,4 @@
-# go-tcnum
+# gotcnum
 Turkish Identification Number Validation
 
 ## Usage
